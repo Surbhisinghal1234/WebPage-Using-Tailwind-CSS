@@ -1,0 +1,14 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 98.9vw solid #000;
+  border-top: 100px solid #fff;
+  border-right: 2px solid transparent;
+}
+.tri-two {
+  width: 0;
+  height: 0;
+  border-left: 98.9vw solid #80808033;
+  border-top: 100px solid black;
+  border-right: 2px solid transparent;
+}
