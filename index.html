@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banner</title>
+    <title>Web Page Using Tailwind</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -16,45 +16,33 @@
     />
   </head>
   <body>
-    <div
-      class="banner bg-gradient-to-r from-black via-gray-800 to-gray-700 bg-cover bg-top min-h-screen"
-      style="background-image: url(./back-tailwind-img.jpeg)"
-    >
-      <!-- <nav>
-        <div>
-          <h3>
-            <a href="" class="text-white decoration-white flex"
-              >THE NOVEMBER ROOM</a
-            >
-          </h3>
-        </div>
-        <div><a href=""></a></div>
-      </nav> -->
+    <div class="banner">
       <header class="text-gray-600 body-font">
         <div
           class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
         >
           <a
-            class="flex title-font font-medium text-lg items-center text-white font-bold mb-4 md:mb-0"
+            class="flex title-font font-bold text-lg items-center text-white font-bold mb-4 md:mb-0"
             >THE NOVEMBER ROOM
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg> -->
-            <!-- <span class="ml-3 text-xl">T</span> -->
           </a>
           <nav
-            class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+            class="md:ml-auto flex flex-wrap items-center text-base justify-center text-lg"
           >
             <a class="mr-5 text-orange-500"
-              ><i class="fa-brands fa-facebook"></i
+              ><i
+                class="fa-brands fa-facebook hover:text-white transition duration-500 ease-in-out hover:-translate-1 hover:scale-110"
+              ></i
             ></a>
             <a class="mr-5 text-orange-500"
-              ><i class="fa-brands fa-twitter"></i
+              ><i
+                class="fa-brands fa-twitter hover:text-white transition duration-500 ease-in-out hover:-translate-1 hover:scale-110"
+              ></i
             ></a>
             <a class="mr-5 text-orange-500"
-              ><i class="fa-brands fa-linkedin"></i
+              ><i
+                class="fa-brands fa-linkedin hover:text-white transition duration-500 ease-in-out hover:-translate-1 hover:scale-110"
+              ></i
             ></a>
-            <!-- <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
           </nav>
         </div>
       </header>
@@ -70,21 +58,22 @@
             to get started today!
           </p>
           <button
-            class="text-blue-600 font-medium text-lg border-2 py-3 px-4 rounded border-orange-500 hover:bg-orange-700 hover:text-white hover:border-transparent"
+            class="text-blue-600 font-medium text-lg border-2 py-3 px-4 rounded border-orange-500 hover:bg-orange-700 hover:text-white hover:border-transparent transition duration-500 ease-in-out hover:-translate-1 hover:scale-90"
           >
             Download Brochure
           </button>
         </div>
       </div>
     </div>
-    <!-- ****************
-    ***ABOUT SECTION****
-    ***************** -->
+
+    <!-- ******************
+    ***ABOUT SECTION*******
+    ******************** -->
     <section class="py-10 bg-black text-white flex items-center justify-evenly">
       <div class="w-2/6 h-4/5 flex items-center">
         <img
           class="object-cover h-full"
-          data-aos="flip-left"
+          data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -92,7 +81,7 @@
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
-          src="./img-2.avif "
+          src="./image/img-2.avif "
           alt=""
         />
       </div>
@@ -132,6 +121,10 @@
         </div>
       </div>
     </section>
+
+    <!-- **********************
+    ****OUR TRAINERS**********
+    ************************** -->
     <section class="flex-col items-center justify-center pt-20 pb-48">
       <div
         class="w-full lg:w-6/12 text-center m-auto pb-24"
@@ -148,7 +141,9 @@
         </p>
       </div>
       <div class="flex justify-around text-center">
-        <div class="w-60 h-[22rem]">
+        <div
+          class="w-60 h-[22rem] hover:-translate-1 hover:scale-110 duration-700"
+        >
           <img
             class="rounded w-full h-full"
             data-aos="flip-right"
@@ -156,17 +151,17 @@
             data-aos-delay="200"
             data-aos-duration="1400"
             data-aos-easing="ease-in-out"
-            src="img-3.avif"
+            src="./image/img-3.avif"
             alt=""
           />
-          <!-- <div class="mt-5"> -->
           <h5 class="mt-5 text-xl font-bold">Mr rogers</h5>
           <p class="mt-2 text-sm text-gray-600 font-semibold">
             NEIGHBORHOOD WATCHMAN
           </p>
-          <!-- </div> -->
         </div>
-        <div class="w-60 h-[22rem]">
+        <div
+          class="w-60 h-[22rem] hover:-translate-1 hover:scale-110 duration-700"
+        >
           <img
             class="rounded w-full h-full"
             data-aos="flip-right"
@@ -174,7 +169,7 @@
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            src="img-3.avif"
+            src="./image/img-7.avif"
             alt=""
           />
           <h1 class="text-xl font-bold mt-5">Strawberry Shortcake</h1>
@@ -182,7 +177,9 @@
             CUPCAKE SMASHER
           </p>
         </div>
-        <div class="w-60 h-[22rem]">
+        <div
+          class="w-60 h-[22rem] hover:-translate-1 hover:scale-110 duration-700"
+        >
           <img
             class="rounded w-full h-full"
             data-aos="flip-right"
@@ -190,7 +187,7 @@
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            src="img-3.avif"
+            src="./image/img-6.avif"
             alt=""
           />
           <h1 class="mt-5 text-xl font-bold">Ronald McDonald</h1>
@@ -201,10 +198,12 @@
       </div>
     </section>
 
-    <!-- <section class="relative">
-      <div class="triangle absolute"></div>
-    </section> -->
     <div class="triangle"></div>
+
+
+    <!-- *************************
+    *****CONTACT US**************
+    *************************** -->
 
     <section
       class="min-h-lvh flex flex-col bg-black text-white items-center justify-evenly"
@@ -224,7 +223,7 @@
         </p>
       </div>
       <div
-        class="min-w-2/5 min-h-2/3 bg-orange-500 rounded p-8"
+        class="min-w-2/4 w-2/4 min-h-2/3 bg-orange-500 rounded p-8 my-5"
         data-aos="fade-up-right"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -244,34 +243,40 @@
           />
         </div>
         <div class="flex flex-col mt-5 mb-3">
-          <label class="pb-2 text-xs font-bold" for="">FULL NAME </label>
+          <label class="pb-2 text-xs font-bold" for="">EMAIL</label>
           <input
             class="w-90 py-1 ps-2 rounded flex justify-center"
             type="email"
-            placeholder="Full Name"
+            placeholder="Email"
           />
         </div>
         <div class="flex flex-col mt-5 mb-3">
-          <label class="pb-2 text-xs font-bold" for="">FULL NAME </label>
-          <textarea class="rounded" name="" id="" cols="" rows="5"></textarea>
+          <label class="pb-2 text-xs font-bold" for="">MESSAGE </label>
+          <textarea
+            class="rounded ps-2 pt-2"
+            name=""
+            id=""
+            cols=""
+            rows="5"
+            placeholder="Type a message..."
+          ></textarea>
         </div>
         <div class="flex items-center justify-center mt-7">
-          <button class="rounded bg-black py-1 px-2">SEND MESSAGE</button>
+          <button
+            class="rounded bg-black py-2 px-5 hover:text-black font-medium hover:bg-white transition duration-700 ease-in-out hover:-translate-1 hover:scale-110"
+          >
+            SEND MESSAGE
+          </button>
         </div>
       </div>
-      <!-- <div class="tri-three absolute"></div> -->
     </section>
     <div class="tri-two"></div>
 
-    <!-- <section class="relative">
-      <div class="tri-two absolute"></div>
-    </section> -->
-    <!-- <section class="relative">
-      <div class="tri-three absolute"></div>
-    </section> -->
+<!-- **************************
+******FOOTER SECTION**********
+**************************** -->
 
     <section class="h-92 pb-6 text-black bg-gray-200">
-      <!-- <div class="h-96"> -->
       <div class="min-w-2/6 ps-12 pt-8">
         <div class="">
           <h1 class="text-3xl font-semibold">Follow us on Social Media</h1>
@@ -281,34 +286,37 @@
         </div>
         <div class="mt-5">
           <span
-            ><i class="me-2 rounded-full bg-white p-3 fab fa-twitter"></i
+            ><i
+              class="me-2 rounded-full bg-white p-3 fab fa-twitter text-blue-400 hover:text-black transition duration-500 ease-in-out"
+            ></i
           ></span>
           <span>
             <i
-              class="me-2 rounded-full bg-white p-3 flex fab fa-facebook-square"
+              class="me-2 rounded-full bg-white p-3 flex fab fa-facebook-square text-blue-600 hover:text-black transition duration-500 ease-in-out"
             ></i>
           </span>
           <span>
-            <i class="me-2 rounded-full bg-white p-3 flex fab fa-dribbble"></i>
+            <i
+              class="me-2 rounded-full bg-white p-3 flex fab fa-dribbble text-pink-400 hover:text-black transition duration-500 ease-in-out"
+            ></i>
           </span>
           <span>
-            <i class="rounded-full bg-white p-3 flex fab fa-github"></i>
+            <i
+              class="rounded-full bg-white p-3 flex fab fa-github text-orange-500 hover:text-black transition duration-500 ease-in-out"
+            ></i>
           </span>
         </div>
       </div>
-      <!-- <div class="one"></div> -->
       <div class="mt-6 mx-4 border-b-2 border-gray-400"></div>
       <p class="text-center mt-7 text-base font-medium">
         Copyright © 2020 THE NOVEMBER ROOM
       </p>
-
-      <!-- <hr class="bg-red-700 text-red-600" /> -->
-      <!-- </div> -->
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
     </script>
   </body>
 </html>
