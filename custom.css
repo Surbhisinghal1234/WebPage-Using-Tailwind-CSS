@@ -1,7 +1,8 @@
-*{
+* {
   pad: 0;
   margin: 0;
   box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
 }
 .triangle {
   width: 0;
@@ -25,4 +26,19 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 300px) and (max-width: 530px) {
+  .tri-two {
+    border-left: 99.7vw solid #80808033;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 800px) {
+  .tri-two {
+    border-left: 99.89vw solid #80808033;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1500px) {
+  .tri-two {
+    border-left: 99.93vw solid #80808033;
+  }
 }

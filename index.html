@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Page Using Tailwind</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,19 +15,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville&family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="banner">
       <header class="text-gray-600 body-font">
         <div
-          class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+          class="container mx-auto flex p-5 justify-between md:flex-row items-center"
         >
           <a
-            class="flex title-font font-bold text-lg items-center text-white font-bold mb-4 md:mb-0"
+            class="flex title-font text-lg items-center  text-white font-bold  md:mb-0"
             >THE NOVEMBER ROOM
           </a>
           <nav
-            class="md:ml-auto flex flex-wrap items-center text-base justify-center text-lg"
+            class="md:ml-auto sm:flex flex-wrap items-center justify-center text-lg hidden"
           >
             <a class="mr-5 text-orange-500"
               ><i
@@ -44,10 +51,13 @@
               ></i
             ></a>
           </nav>
+          <div class="sm:hidden mt-[-.8rem] sm:mt-0">
+            <a href="" class="text-white  text-4xl">&#8801</a>
+        </div>
         </div>
       </header>
       <div class="h-screen flex flex-col flex-wrap justify-center items-center">
-        <div class="min-h-96 text-center">
+        <div class="min-h-96 text-center px-[1rem] sm:px-0">
           <h1 class="text-white text-5xl font-bold">
             Feel the <span class="text-orange-500">Power</span>
           </h1>
@@ -67,10 +77,12 @@
     </div>
 
     <!-- ******************
-    ***ABOUT SECTION*******
-    ******************** -->
-    <section class="py-10 bg-black text-white flex items-center justify-evenly">
-      <div class="w-2/6 h-4/5 flex items-center">
+      ***ABOUT SECTION*******
+      ******************** -->
+    <section
+      class="py-10 bg-black text-white flex flex-col sm:flex-row items-center justify-evenly"
+    >
+      <div class="w-[320px] sm:w-2/6 h-4/5 flex items-center">
         <img
           class="object-cover h-full"
           data-aos="fade-left"
@@ -86,7 +98,7 @@
         />
       </div>
       <div
-        class="w-2/6"
+        class="sm:w-2/6 px-[2rem] sm:px-0 mt-[2rem] sm:mt-0"
         data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="10"
@@ -122,30 +134,28 @@
       </div>
     </section>
 
-    <!-- **********************
-    ****OUR TRAINERS**********
-    ************************** -->
-    <section class="flex-col items-center justify-center pt-20 pb-48">
+    <!--.....................  -->
+    <div class="h-auto w-100 flex flex-col md:px-[6rem] px-[2rem] my-[3rem]">
       <div
-        class="w-full lg:w-6/12 text-center m-auto pb-24"
+        class="text-center xl:w-1/3 md:w-2/3 m-auto sm:w-2/3"
         data-aos="slide-right"
         data-aos-offset="100"
         data-aos-delay="100"
         data-aos-duration="1500"
         data-aos-easing="ease-in-out"
       >
-        <h1 class="text-4xl font-semibold">MEET OUR TRAINERS</h1>
-        <p class="text-lg leading-relaxed m-4 text-gray-600">
-          Our trainers are are here to dedicate the time and effort that you
-          need to get in the best shape of your life
+        <h1 class="font-semibold text-4xl">MEET OUR TRAINERS</h1>
+        <p class="mt-3">
+          Our trainers are here to dedicate the time and effort that you need to
+          get in the best shape of your life
         </p>
       </div>
-      <div class="flex justify-around text-center">
-        <div
-          class="w-60 h-[22rem] hover:-translate-1 hover:scale-110 duration-700"
-        >
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between mt-[3rem] gap-y-12 sm:gap-y-0 sm:gap-x-6"
+      >
+        <div>
           <img
-            class="rounded w-full h-full"
+            class="w-96 lg:w-80 md:w-72 rounded-md hover:-translate-1 hover:scale-105 duration-700"
             data-aos="flip-right"
             data-aos-offset="200"
             data-aos-delay="200"
@@ -154,62 +164,57 @@
             src="./image/img-3.avif"
             alt=""
           />
-          <h5 class="mt-5 text-xl font-bold">Mr rogers</h5>
-          <p class="mt-2 text-sm text-gray-600 font-semibold">
-            NEIGHBORHOOD WATCHMAN
-          </p>
+          <div class="text-center mt-3">
+            <h2 class="font-bold text-3xl">Trainer</h2>
+            <p>Lorem ipsum</p>
+          </div>
         </div>
-        <div
-          class="w-60 h-[22rem] hover:-translate-1 hover:scale-110 duration-700"
-        >
+        <div>
           <img
-            class="rounded w-full h-full"
+            class="w-96 lg:w-80 md:w-72 rounded-md hover:-translate-1 hover:scale-105 duration-700"
             data-aos="flip-right"
             data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-duration="1400"
             data-aos-easing="ease-in-out"
-            src="./image/img-7.avif"
+            src="./image/img-4.avif"
             alt=""
           />
-          <h1 class="text-xl font-bold mt-5">Strawberry Shortcake</h1>
-          <p class="mt-2 text-sm text-gray-600 font-semibold">
-            CUPCAKE SMASHER
-          </p>
+          <div class="text-center mt-3">
+            <h2 class="font-bold text-3xl">Trainer</h2>
+            <p class="">Lorem ipsum</p>
+          </div>
         </div>
-        <div
-          class="w-60 h-[22rem] hover:-translate-1 hover:scale-110 duration-700"
-        >
+        <div class=" ">
           <img
-            class="rounded w-full h-full"
+            class="w-96 lg:w-80 md:w-72 rounded-md hover:-translate-1 hover:scale-105 duration-700"
             data-aos="flip-right"
             data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-duration="1400"
             data-aos-easing="ease-in-out"
             src="./image/img-6.avif"
             alt=""
           />
-          <h1 class="mt-5 text-xl font-bold">Ronald McDonald</h1>
-          <p class="mt-2 text-sm text-gray-600 font-semibold">
-            DOUBLE WHOOPASS WITH CHEESE
-          </p>
+          <div class="mt-3 text-center">
+            <h2 class="font-bold text-3xl">Trainer</h2>
+            <p>Lorem ipsum</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="triangle"></div>
-
 
     <!-- *************************
     *****CONTACT US**************
     *************************** -->
 
     <section
-      class="min-h-lvh flex flex-col bg-black text-white items-center justify-evenly"
+      class="min-h-lvh flex flex-col bg-black text-white items-center justify-evenly py-10 sm:py-0"
     >
       <div
-        class="min-w-2/5 text-center"
+        class="sm:-w-2/5 text-center px-[3rem] sm:px-0"
         data-aos="fade-up-left"
         data-aos-offset="100"
         data-aos-delay="100"
@@ -223,7 +228,7 @@
         </p>
       </div>
       <div
-        class="min-w-2/4 w-2/4 min-h-2/3 bg-orange-500 rounded p-8 my-5"
+        class="w-[250px] sm:w-2/4 min-h-2/3 bg-orange-500 rounded p-8 my-5"
         data-aos="fade-up-right"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -272,12 +277,12 @@
     </section>
     <div class="tri-two"></div>
 
-<!-- **************************
+    <!-- **************************
 ******FOOTER SECTION**********
 **************************** -->
 
     <section class="h-92 pb-6 text-black bg-gray-200">
-      <div class="min-w-2/6 ps-12 pt-8">
+      <div class="min-w-2/6 sm:ps-12 pt-8 px-[2rem]">
         <div class="">
           <h1 class="text-3xl font-semibold">Follow us on Social Media</h1>
           <p class="text-xl text-gray-700">
@@ -312,11 +317,9 @@
         Copyright © 2020 THE NOVEMBER ROOM
       </p>
     </section>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-
     </script>
   </body>
 </html>
